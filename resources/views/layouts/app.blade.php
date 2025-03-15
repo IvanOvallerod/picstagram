@@ -19,6 +19,7 @@
         </style>
         @endif
         @vite('resources/css/app.css')
+        <link href="{{ secure_url('/resources/css/app.css') }}" rel="stylesheet"/>
         @stack('styles')
         @livewireStyles()
     </head>
