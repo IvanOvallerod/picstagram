@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>DevStagram - @yield('title')</title>
+        <title>Picstagram - @yield('title')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -27,7 +27,7 @@
         <header class="p-5 border-b bg-white shadow">
             <div class="container mx-auto flex justify-between items-center">
                 <h1 class="text-3xl font-black">
-                    <a href="/">Devstagram</a>
+                    <a href="/">Picstagram</a>
                 </h1>
                 @auth
                 <nav class="flex gap-2">
@@ -70,7 +70,7 @@
         </main>
         <footer class="mt-10 bg-white shadow p-5">
             <div class="container mx-auto p-5 font-bold uppercase text-gray-500">
-                <p class="text-center">Devstagram &copy; IOR | {{ now()->year }}</p>
+                <p class="text-center">Picstagram &copy; IOR | {{ now()->year }}</p>
             </div>
         </footer>
         @stack('scripts')
