@@ -5,7 +5,7 @@
 @section('content')
     <div class="md:flex md:justify-center">
         <div class="w-8/12 md:w-1/2 bg-white shadow p-6">
-            <form action="{{ route('profile.store', $user) }}" method="post" novalidate>
+            <form action="{{ route('profile.store', $user) }}" method="post" enctype="multipart/form-data" novalidate>
                 @csrf
                 <div class="mb-5">
                     <label for="username" class="mb-2 block uppercase text-gray-500 font-bold">Username</label>
